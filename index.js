@@ -1,4 +1,4 @@
-// Problem =1: 
+// Answer to problem number 1: 
 
 function mindGame(number){
     let theProduct = number * 3;
@@ -9,11 +9,7 @@ function mindGame(number){
 }
 
 
-
-//  end problem number 1
-
-// Problem =2:
-
+// Answer to problem number 2:
 
 function evenOdd(stringName){
     let nameOfType = stringName.length;
@@ -26,19 +22,21 @@ function evenOdd(stringName){
 }
 
 
-// end problem number 2
-
-// problem =3:
+// Answer to problem number 3:
 
 function isLGSeven(number){
-    let quotient = number - 7;
-    let newQuotient = number *2;
-    return newQuotient;
+    let subtraction = number - 7;
+    if(subtraction >= 6){
+        let doubleInput = number * 2;
+        return doubleInput;
+    } 
+    else{
+        return subtraction;
+    }
 }
 
-// end problem number 3.
 
-// problem = 4:
+// Answer to problem number 4:
 
 
 function findingBadData(allData){
@@ -57,10 +55,7 @@ function findingBadData(allData){
 }
 
 
-// end problem number 4.
-
-
-// Problem =5:
+// Answer to problem number 5:
 
 function gemsToDiamond(firstFriendGems, secondFriendGems, theirdFriendGems){
     let totalGems = firstFriendGems * 21 + secondFriendGems * 32 + theirdFriendGems * 43;
@@ -73,6 +68,7 @@ function gemsToDiamond(firstFriendGems, secondFriendGems, theirdFriendGems){
     }
 }
 
-let daimond=gemsToDiamond(100, 5, 1);
-
-console.log(daimond);
+// ----------------
+// -----------------End Assignment
+// ------------------------------------------
+// ---------------------------------------------------

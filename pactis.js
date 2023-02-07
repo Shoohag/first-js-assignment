@@ -128,5 +128,43 @@ function gemsToDiamond(friend1, friend2, friend3){
 }
 
 
-let num2 = gemsToDiamond(100, 200, 50);
-console.log(num2);
+// let num2 = gemsToDiamond(100, 200, 50);
+// console.log(num2);
+
+
+
+// problem 3 solution
+
+
+function isLGSeven(number){
+    let quotient = number - 7;
+    if(quotient >= 6){
+        let inputDouble = number * 2;
+        console.log(inputDouble);
+    }
+
+    else{
+        console.log(quotient);
+    }
+   
+}
+
+// let retunvalo = 
+isLGSeven(-15)
+// console.log(retunvalo);
+
+
+
+
+
+
+// function result(){
+//     if(mindGame(5)== 7.5 && mindGame(50)== 75 && mindGame(33)== 49.5 && evenOdd('phero')=='odd' && evenOdd('batch7')== 'even' && evenOdd('chatgpt')=='odd' && isLGSeven(6)==-1 && isLGSeven(-15)==-22 && isLGSeven(15)==30 && findingBadData([1,2,3])==0 && findingBadData([2,-5,-7,-13])==3 && findingBadData([-4,-9,-5,-33,55])==5 && gemsToDiamond(1, 1,1,)== 96 && gemsToDiamond(20, 200, 50)==6970 && gemsToDiamond(100, 5, 1)==303 ){
+//         return 'all ok'
+//     }
+//     else{
+//         'somthig is worng'
+//     }
+// }
+
+// console.log(result());
