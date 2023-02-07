@@ -55,7 +55,7 @@ isLGSeven(7);
 // problem 4
 
 
-// let numbers = [-1, 2, -3, 4,5,6,-7,8,-9,10];
+// let numbers = [-1, 2, -3, 4,-5,6,-7,8,-9,10];
 // let count = 0;
 
 // for(let i = 0; i < numbers.length; i++){
@@ -71,20 +71,29 @@ isLGSeven(7);
 //     }
 // }
 
-// // console.log(count);
+// console.log(count);
 
 
 // // way2
 
 
 function findingBadData(allData){
-   console.log(allData.length);
+    let badData = 0;
+   for(let i = 0; i < allData.length; i++){
+    let data = allData[i];
+    if(data < 0){
+        console.log('Bad Data');
+        badData = badData+1;
+    }
+    else{
+        console.log('Good Data');
+    }
+    
+   }
+   return badData;
 }
 
-findingBadData[1 , 3 , -2, 4, -5, 5]
 
-function data(nns){
-    console.log(nns);
-}
+let bad=findingBadData([2,-5, 6, 4 , -5 , -1, -9, -22]);
 
-data[20];
+console.log(bad);
