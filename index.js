@@ -62,3 +62,17 @@ function findingBadData(allData){
 
 // Problem =5:
 
+function gemsToDiamond(firstFriendGems, secondFriendGems, theirdFriendGems){
+    let totalGems = firstFriendGems * 21 + secondFriendGems * 32 + theirdFriendGems * 43;
+    if(totalGems > 2000){
+        let minusExtraGems = totalGems - 2000;
+        return minusExtraGems;
+    }
+    else{
+        return totalGems;
+    }
+}
+
+let daimond=gemsToDiamond(100, 5, 1);
+
+console.log(daimond);

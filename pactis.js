@@ -82,11 +82,11 @@ function findingBadData(allData){
    for(let i = 0; i < allData.length; i++){
     let data = allData[i];
     if(data < 0){
-        console.log('Bad Data');
+        // console.log('Bad Data');
         badData = badData+1;
     }
     else{
-        console.log('Good Data');
+        // console.log('Good Data');
     }
     
    }
@@ -96,4 +96,37 @@ function findingBadData(allData){
 
 let bad=findingBadData([2,-5, 6, 4 , -5 , -1, -9, -22]);
 
-console.log(bad);
+// console.log(bad);
+
+
+
+
+// problem 5
+
+
+// function gemsToDiamond(){
+//     let friends1 = { firstFriend : 10};
+//     let friend2 = {secondFriend : 15};
+//     let friend3 = {theirdFriend : 20};
+// }
+
+// gemsToDiamond();
+
+
+
+function gemsToDiamond(friend1, friend2, friend3){
+    let countGems = friend1*21 + friend2*32 + friend3*43;
+    if(countGems > 2000){
+        let daimond = countGems - 2000;
+        // console.log(daimond);
+        return daimond;
+    }
+    else{
+        return countGems;
+    }
+    // console.log(countGems);
+}
+
+
+let num2 = gemsToDiamond(100, 200, 50);
+console.log(num2);
